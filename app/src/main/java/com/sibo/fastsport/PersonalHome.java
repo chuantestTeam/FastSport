@@ -27,8 +27,7 @@ public class PersonalHome extends Activity implements View.OnClickListener{
         linearLayoutManager = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(OrientationHelper.HORIZONTAL);
         recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.addItemDecoration(new DividerItemDecoration(this,
-                DividerItemDecoration.HORIZONTAL_LIST));
+
         adapter = new DetailsRecyclerView(this);
         recyclerView.setAdapter(adapter);
         back = (ImageView)findViewById(R.id.activity_personalhome_iv_back);

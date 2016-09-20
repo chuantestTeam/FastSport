@@ -28,8 +28,6 @@ public class PersonalInfoActivity extends Activity implements View.OnClickListen
         linearLayoutManager  = new LinearLayoutManager(this);
         linearLayoutManager.setOrientation(OrientationHelper.VERTICAL);
         recyclerView.setLayoutManager(linearLayoutManager);
-        recyclerView.addItemDecoration(new DividerItemDecoration(this,
-                DividerItemDecoration.VERTICAL_LIST));
         adapter = new PersonalInfoRecyclerView(this);
         recyclerView.setAdapter(adapter);
     }
